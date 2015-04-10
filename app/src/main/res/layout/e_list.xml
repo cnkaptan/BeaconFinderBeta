@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/e_list_padding"
+    >
+
+  <TextView
+      android:id="@+id/producer_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"
+      android:textAllCaps="true"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/uuid_label"
+      android:layout_below="@id/producer_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="UUID"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/uuid"
+      android:layout_below="@id/producer_name"
+      android:layout_toRightOf="@id/uuid_label"
+      android:layout_marginLeft="4dp"
+      android:layout_marginTop="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/major_label"
+      android:layout_below="@id/uuid"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="major"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/major"
+      android:layout_below="@id/uuid"
+      android:layout_toRightOf="@id/major_label"
+      android:layout_marginLeft="4dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/separator"
+      android:layout_below="@id/uuid"
+      android:layout_toRightOf="@id/major"
+      android:layout_marginLeft="4dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="||"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/minor_label"
+      android:layout_below="@id/uuid"
+      android:layout_toRightOf="@id/separator"
+      android:layout_marginLeft="4dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="minor"
+      />
+
+  <TextView
+      style="@style/e_list_text"
+      android:id="@+id/minor"
+      android:layout_below="@id/uuid"
+      android:layout_toRightOf="@id/minor_label"
+      android:layout_marginLeft="4dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
+
+</RelativeLayout>
